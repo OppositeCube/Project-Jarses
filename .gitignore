@@ -192,3 +192,11 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+
+# Ignore logs, memory, secrets
+logs/
+memory/
+config/secure_config.yaml
+*.mp3
+__pycache__/
+.env
