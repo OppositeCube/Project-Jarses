@@ -1,0 +1,9 @@
+SpeechRecognition
+gtts
+pygame
+transformers
+huggingface_hub
+torch
+openai
+wikipedia-api
+pyyaml
