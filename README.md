@@ -1,31 +1,50 @@
-# Project-Jarses
-Real-world J.A.R.V.I.S.-style AI assistant with voice command, NLP, IoT integration, and modular exosuit compatibility. Part of the Jarses Industries initiative.
-# Jarses AI – Real-World J.A.R.V.I.S. Assistant
+# 🧠 Project-Jarses – Real-World J.A.R.V.I.S. Assistant
 
-Welcome to **Jarses AI**, the open-source foundation of an ambitious mission to build a real-world AI assistant and intelligent modular exosuit, inspired by Tony Stark’s J.A.R.V.I.S. Built under **Jarses Industries**, this system integrates AI, voice recognition, robotics, AR/VR, and IoT control – all designed for both **civilian** and **military** applications.
+**Project-Jarses** is the open-source foundation of an ambitious mission to build a real-world AI assistant and intelligent modular exosuit, inspired by Tony Stark’s J.A.R.V.I.S. Built under **Jarses Industries**, this system integrates AI, voice recognition, robotics, AR/VR, and IoT control – designed for both **civilian** and **defense** applications.
 
 ---
 
 ## 🔧 Core Features
 
-- 🎙️ **Voice Command System** – Real-time voice recognition and response using `speech_recognition`, `gTTS`, and Hugging Face models.
-- 🧠 **Natural Language Processing** – Smart AI replies using `DialoGPT` or OpenAI-based models.
-- 🕹️ **IoT/Hardware Control** – Extendable to sensors, motors, smart devices, and basic robotics using `Raspberry Pi` or `Arduino`.
-- 🧬 **Health Monitoring (Future)** – Track vitals, motion, and stress levels via sensors (ECG/EMG, temperature, etc.).
-- 🕶️ **AR/VR Interface (Planned)** – Unity or WebXR-based HUD for command feedback, data overlay, and holographic interaction.
-- 🔐 **Memory System** – Short-term and long-term memory handling using JSON/YAML storage.
-- ⚙️ **Simulation Support** – CAD + Unity environment integration to simulate AI-suit interactions before hardware deployment.
+- 🎙️ **Voice Command System**  
+  Real-time speech recognition and TTS via Python, Hugging Face models, and `gTTS`.
+
+- 🧠 **Natural Language Processing**  
+  Smart conversation using Hugging Face’s DeepSeek-V3 (or interchangeable OpenAI support).
+
+- 💬 **Basic Command Understanding**  
+  Executes simple system commands, speaks responses, and remembers context.
+
+- 💾 **Short-Term Memory** *(Work in Progress)*  
+  Planned: Store session data in memory for context-awareness.
+
+- 🕹️ **IoT/Hardware Control** *(Work in Progress)*  
+  Raspberry Pi & Arduino integration for home/robotic device control.
+
+- 🧬 **Health Monitoring** *(Planned)*  
+  Track vitals, stress, and motion via sensors (ECG, EMG, temp).
+
+- 🕶️ **AR/VR Interface** *(Planned)*  
+  Unity/WebXR HUD for command feedback and holographic data.
+
+- ⚙️ **Simulation Support** *(Planned)*  
+  Integration with CAD & Unity to simulate AI–suit interaction before hardware deployment.
 
 ---
 
-## 📦 Project Structure
+## 📁 Project Structure
 
 ```bash
 Jarses-AI/
-├── integrated-jarvis-deepseek-v0.0.1.py        # Main control script for AI assistant
-├── jarvis-ai-system2.py (work in projress)     # Secondary system logic or legacy module
-├── config.yaml (work in projress)              # Assistant configuration
-├── secure_config.yaml (work in projress)       # API keys and secure credentials (gitignore this)
-├── modules/ (work in projress)                 # Optional: NLP, Audio, UI components
-├── docs/                                       # Project documentation
-└── README.md                                   # You're here
+├── src/
+│   └── integrated_jarvis.py             # ✅ Main working AI script (current version)
+├── config/
+│   ├── config.yaml                      # 🔧 (Work in Progress)
+│   └── secure_config.yaml               # 🔐 (Work in Progress – not for GitHub)
+├── memory/                              # 🧠 (Work in Progress – for context memory)
+│   └── jarvis_memory.json
+├── logs/                                # 📜 (Work in Progress)
+├── docs/                                # 📚 (Planned)
+├── requirements.txt                     # 🛠️ (Work in Progress)
+├── README.md                            # ✅ You're here
+└── .gitignore                           # ⚠️ (Work in Progress)
